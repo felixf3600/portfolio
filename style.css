@@ -1,0 +1,149 @@
+html,
+body {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+.main-header {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 60vw;
+}
+
+.header-title {
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  padding-top: 10px;
+  min-width: 120px;
+  /* transition: 2s; */
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.title {
+  text-align: center;
+}
+.links a p {
+  color: white !important;
+}
+.contact {
+  display: flex;
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  right: 0px;
+  bottom: 0;
+  cursor: pointer;
+  justify-content: right;
+}
+
+.animate-side {
+  /* transition: 2s; */
+  min-width: 0;
+  width: 0px;
+  opacity: 0;
+}
+.contact img {
+  width: 20vw;
+  height: 20vw;
+}
+
+a {
+  text-decoration: none;
+}
+.grid-conrtainer {
+  width: 100vw;
+}
+.logic {
+  width: 100vw;
+}
+
+.small-container {
+  padding: 10px;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 40vw;
+  cursor: pointer;
+}
+.inside-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content {
+  /* transition: 2s; */
+  height: 0;
+  opacity: 0;
+}
+.animate-content {
+  /* transition: 2s; */
+  height: auto;
+  opacity: 1;
+}
+.skills {
+  width: 100vw;
+}
+.footer {
+  width: 100vw;
+}
+
+@media screen and (min-width: 900px) {
+  .grid-conrtainer {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .header-title {
+    width: 100vw;
+    height: 10vw;
+  }
+  .small-container {
+    width: 32vw;
+  }
+}
+
+.logic,
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.abstract {
+  display: none;
+}
+.small-container:hover .abstract {
+  display: block;
+}
